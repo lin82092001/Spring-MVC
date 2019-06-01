@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+	
+	
+	<bean id="DataSource" class="java.lang.String">
+		<constructor-arg type="String" value="java:comp/env/datasource/JavaSQLTestDS"/> 
+    </bean>
+    
+    <bean id="fee" class="service.carmarket.HibernateCarMarket" scope="prototype"/>
+	<bean id="testunit" class="service.carmarket.HibernateOwner" scope="prototype"/>
+	
+	<bean id="feeModel" class="model.CarMarketModel" />
+
+	<bean id="HELLO" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/hello"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlhello"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlhellocss"/> -->
+    </bean>
+
+    <bean id="helloSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/messageFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlmessageFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlmessageFeecss"/> -->
+    </bean>
+
+    <bean id="QUERY" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/queryCar"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquery"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquerycss"/> -->
+    </bean>
+    
+    <bean id="QUERY2" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/queryOwner"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquery"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquerycss"/> -->
+    </bean>
+
+    <bean id="querycarSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/queryC"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlqueryFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlqueryFeecss"/> -->
+    </bean>
+    
+     <bean id="queryownerSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/queryO"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlqueryFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlqueryFeecss"/> -->
+    </bean>
+
+    <bean id="PAY" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/buyCar"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlpay"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlpaycss"/> -->
+    </bean>
+
+    <bean id="paySUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/buy"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlpayFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlpayFeecss"/> -->
+    </bean>
+    
+    <bean id="SELL" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/sellCar"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlpay"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlpaycss"/> -->
+    </bean>
+
+    <bean id="sellSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/sell"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlpayFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlpayFeecss"/> -->
+    </bean>
+
+    <bean id="QUIT" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/quit"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquit"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquitcss"/> -->
+    </bean>
+
+    <bean id="quitSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/quitFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquitFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquitFeecss"/> -->   
+    </bean>
+
+    <bean id="listSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/listCarMarket"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intllistFee"/> --> 
+   		<!-- <constructor-arg type="String" value="spring/database/intl/css/intllistFeecss"/> -->
+    </bean>
+    
+     <bean id="ownerlistSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/listOwner"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intllistFee"/> --> 
+   		<!-- <constructor-arg type="String" value="spring/database/intl/css/intllistFeecss"/> -->
+    </bean>
+
+    <bean id="ERROR" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/error"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlerror"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlerrorcss"/> -->
+    </bean>
+
+</beans>

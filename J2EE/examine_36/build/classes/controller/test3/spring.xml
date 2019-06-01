@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+	<bean id="DataSource" class="java.lang.String">
+		<constructor-arg type="String" value="java:comp/env/datasource/JavaSQLTestDS"/> 
+    </bean>
+	
+	<bean id="car" class="service.car.HibernateCar" scope="prototype"/>
+	<bean id="owner" class="service.car.HibernateOwner" scope="prototype"/>
+	
+	<bean id="HibernateConfig" class="java.lang.String">
+		<constructor-arg type="String" value="service/car/carhibernate-config.xml"/>
+    </bean>
+
+	<bean id="messageModel" class="viewmodel.MessageModel" />
+	<bean id="carModel" class="model.CarModel" />
+
+    <bean id="ACCOUNT" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/account"/>
+    </bean>
+
+    <bean id="accountSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/messageAccount"/>
+    </bean>
+
+    <bean id="GARAGE" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/garage"/>
+    </bean>
+    
+    <bean id="CREATE" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/create"/>
+    </bean>
+    
+    <bean id="TENDER" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/tender"/>
+    </bean>
+
+    <bean id="garageSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/messageGarage"/>
+    </bean>
+
+    <bean id="listCarSUCCESS" class="java.lang.String">
+   		<constructor-arg type="String" value="spring/test3/listCar"/>
+    </bean>
+    
+    <bean id="listMakerSUCCESS" class="java.lang.String">
+   		<constructor-arg type="String" value="spring/test3/listMaker"/>
+    </bean>
+
+    <bean id="ERROR" class="java.lang.String">
+		<constructor-arg type="String" value="spring/test3/error"/>
+    </bean>
+
+</beans>

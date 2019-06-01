@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;examine_36&apos;&#x0D;&#x0A;- Original project: &apos;examine_36&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     service.fee.HibernateFee.java&#x0D;&#x0A;     feehibernate-configuration.xml&#x0D;&#x0A;     feehibernate-mapping.xml" description="Delete elements" element1="src/service/fee/feehibernate-configuration.xml" element2="src/service/fee/feehibernate-mapping.xml" element3="/src&lt;service.fee{HibernateFee.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1448521449694" subPackages="false" version="1.0"/>
+</session>

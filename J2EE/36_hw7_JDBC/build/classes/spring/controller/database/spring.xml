@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+	<bean id="DataSource" class="java.lang.String">
+		<constructor-arg type="String" value="java:comp/env/datasource/helloDS36"/> 
+    </bean>
+
+	<bean id="message" class="service.message.HelloMessage" />
+	<!-- <bean id="message" class="service.message.HiMessage" /> -->
+	<!-- <bean id="message" class="service.message.AlohaMessage" /> -->
+
+	<bean id="mail" class="service.mail.GoogleMail" />
+	
+	<!--<bean id="fee" class="service.fee.JDBCFee" scope="prototype"/>-->
+	<bean id="fee" class="service.fee.HibernateFee"/>
+
+	<bean id="messageModel" class="viewmodel.MessageModel" />
+	<bean id="feeModel" class="model.FeeModel" />
+
+	<bean id="HELLO" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/hello"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlhello"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlhellocss"/> -->
+    </bean>
+
+    <bean id="helloSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/messageFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlmessageFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlmessageFeecss"/> -->
+    </bean>
+
+    <bean id="QUERY" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/query"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquery"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquerycss"/> -->
+    </bean>
+
+    <bean id="querySUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/queryFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlqueryFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlqueryFeecss"/> -->
+    </bean>
+
+    <bean id="PAY" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/pay"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlpay"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlpaycss"/> -->
+    </bean>
+
+    <bean id="paySUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/payFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlpayFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlpayFeecss"/> -->
+    </bean>
+
+    <bean id="QUIT" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/quit"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquit"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquitcss"/> -->
+    </bean>
+
+    <bean id="quitSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/quitFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlquitFee"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlquitFeecss"/> -->   
+    </bean>
+
+    <bean id="listSUCCESS" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/listFee"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intllistFee"/> --> 
+   		<!-- <constructor-arg type="String" value="spring/database/intl/css/intllistFeecss"/> -->
+    </bean>
+
+    <bean id="ERROR" class="java.lang.String">
+		<constructor-arg type="String" value="spring/database/error"/>
+		<!-- <constructor-arg type="String" value="spring/database/intl/intlerror"/> -->
+		<!-- <constructor-arg type="String" value="spring/database/intl/css/intlerrorcss"/> -->
+    </bean>
+
+</beans>

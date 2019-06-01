@@ -1,0 +1,14 @@
+127.0.0.1 - - [18/Nov/2015:16:53:00 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:16:53:59 +0800] "GET /36_hw7_JDBC/index.html HTTP/1.1" 200 2890
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:16:53:59 +0800] "GET /36_hw7_JDBC/css/web.css HTTP/1.1" 200 469
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:16:53:59 +0800] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:16:54:03 +0800] "GET /36_hw7_JDBC/spring/database/hello HTTP/1.1" 200 699
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:16:54:08 +0800] "POST /36_hw7_JDBC/spring/database/doMessage HTTP/1.1" 200 685
+127.0.0.1 - - [18/Nov/2015:17:53:18 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:17:55:47 +0800] "GET /36_hw7_JDBC/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:17:55:47 +0800] "GET /36_hw7_JDBC/css/web.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:17:55:50 +0800] "GET /36_hw7_JDBC/spring/database/hello HTTP/1.1" 200 699
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:17:56:01 +0800] "POST /36_hw7_JDBC/spring/database/doMessage HTTP/1.1" 500 14048
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:17:56:26 +0800] "POST /36_hw7_JDBC/spring/database/doMessage HTTP/1.1" 500 14048
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:17:58:13 +0800] "POST /36_hw7_JDBC/spring/database/doMessage HTTP/1.1" 500 14048
+0:0:0:0:0:0:0:1 - - [18/Nov/2015:18:03:34 +0800] "POST /36_hw7_JDBC/spring/database/doMessage HTTP/1.1" 500 14048
